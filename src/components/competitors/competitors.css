@@ -1,0 +1,15 @@
+ul {
+  list-style-type: none;
+}
+button {
+  padding: 0.8em;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #282c5c;
+  border: 2px solid #282c5c;
+  background: #fff;
+  cursor: pointer;
+  margin: 1em;
+}

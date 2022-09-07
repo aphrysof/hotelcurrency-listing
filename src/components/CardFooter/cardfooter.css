@@ -1,3 +1,11 @@
 .card__cta {
-    display: flex;
+  display: flex;
+  align-items: center;
+}
+.card__cta > ul {
+  padding: 10px;
+  list-style-type: none;
+}
+ul > li {
+  color: rgb(22 163 74);
 }

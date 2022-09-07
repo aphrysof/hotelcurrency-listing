@@ -1,19 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext} from "react";
 import "./navbar.css";
 import logo from "../../logo/ascenda_logo.png";
 import { AppContext } from "../../context";
 
 const Navbar = () => {
-  const { setCurrency, currency } = useContext(AppContext);
+  const { setCurrency} = useContext(AppContext);
 
-  useEffect(() => {
-    const savedItem = localStorage.getItem("currency");
-    if (savedItem) {
-      setCurrency(savedItem);
-    } else if (savedItem === null) {
-      setCurrency(currency);
-    }
-  }, [setCurrency, currency]);
   return (
     <nav>
       <div className="logo">

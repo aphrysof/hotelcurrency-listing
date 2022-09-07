@@ -16,6 +16,7 @@
 }
 .item > img {
   width: 30%;
+  border-radius: 25px;
 }
 .item__details {
   margin-left: 2.5em;

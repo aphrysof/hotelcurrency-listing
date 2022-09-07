@@ -34,7 +34,7 @@ const Card = ({ data }) => {
                     <h2>{item.name}</h2>
                     <address>{item.address}</address>
                   </div>
-                  {currencyData && currencyData ? (
+                  {currencyData ? (
                     <CardFooter
                       data={currencyData.filter(
                         (element) => element.id === item.id
@@ -45,13 +45,20 @@ const Card = ({ data }) => {
               </div>
 
               <div className="item__competitors">
-                {currencyData && currencyData ? (
+                {currencyData ? (
                   <Competitor
                     data={currencyData.filter(
                       (element) => element.id === item.id
                     )}
                   />
                 ) : null}
+                <button
+                  onClick={() => {
+                    alert(`You've booked ${item.name}`);
+                  }}
+                >
+                  Book Hotel
+                </button>
               </div>
             </div>
             <div className="hotel__description">
@@ -71,7 +78,6 @@ const Card = ({ data }) => {
                     <MdKeyboardArrowDown size={16} />
                   </button>
                 </div>
-                {/* <p>{item.description.replace(/<\/?[^>]+(>|$)/g, "")}</p> */}
               </div>
             </div>
           </div>

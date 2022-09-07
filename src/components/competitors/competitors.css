@@ -1,6 +1,4 @@
-ul {
-  list-style-type: none;
-}
+
 button {
   padding: 0.8em;
   border-radius: 25px;
@@ -12,4 +10,16 @@ button {
   background: #fff;
   cursor: pointer;
   margin: 1em;
+}
+h3 {
+  color: #282c5c;
+}
+.prices {
+  display: flex;
+  align-items: center;
+}
+.prices > p {
+  color: rgb(22 163 74);
+  margin: 0;
+  margin-right: 5px;
 }
